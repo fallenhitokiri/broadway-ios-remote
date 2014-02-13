@@ -27,21 +27,18 @@
 }
 
 -(void)connect {
-    
     [self.socketIO connectToHost:@"printf.net" onPort:8001];
     
     NSMutableDictionary *driver = [NSMutableDictionary dictionary];
     [driver setObject:@"1" forKey:@"driver_id"];
     
     [self.socketIO sendEvent:@"register driver" withData:driver];
-    
 }
 
 - (void)update:(NSString *)driverid withLocation:(CLLocation *)location andMotion:(NSString *)motion {
     
     NSMutableDictionary *coordinates = [NSMutableDictionary dictionary];
     [coordinates setObject:motion forKey:@"latitude"];
-
     
     NSMutableDictionary *payload = [NSMutableDictionary dictionary];
     [payload setObject:coordinates forKey:@"coordinates"];

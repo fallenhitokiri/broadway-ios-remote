@@ -58,7 +58,7 @@
             NSLog(@"x: %f",data.acceleration.x);
             NSNumber *myDoubleNumber = [NSNumber numberWithDouble:data.acceleration.x];
             self.motion = [myDoubleNumber stringValue];
-            [self.communicator update:self.driverID withLocation:location andMotion:self.motion];
+            [self.communicator update:self.driverID withLocation:@"0" andMotion:self.motion];
         }
         );
 	 }
@@ -73,15 +73,6 @@
     [self.locationManager stopUpdatingLocation];
 }
 
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-    CLLocation *location = [locations lastObject];
-    NSLog(@"x: %@",self.motion);
-//    if(self.motion) {
-//        [self.communicator update:self.driverID withLocation:location andMotion:self.motion];
-//    } else {
-//        [self.communicator update:self.driverID withLocation:location andMotion:@"0"];
-//    }
-    
-}
+
 
 @end
