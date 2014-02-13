@@ -22,6 +22,7 @@
 		FAF1E9A718AC5FCA002D3D61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAF1E9A518AC5FCA002D3D61 /* InfoPlist.strings */; };
 		FAF1E9A918AC5FCA002D3D61 /* TimoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF1E9A818AC5FCA002D3D61 /* TimoTests.m */; };
 		FAF1E9B318AC5FDD002D3D61 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FAF1E9B218AC5FDD002D3D61 /* Podfile */; };
+		FAF1E9B818AC659C002D3D61 /* DeviceMotionUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF1E9B718AC659C002D3D61 /* DeviceMotionUpdate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		FAF1E9A618AC5FCA002D3D61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAF1E9A818AC5FCA002D3D61 /* TimoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimoTests.m; sourceTree = "<group>"; };
 		FAF1E9B218AC5FDD002D3D61 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		FAF1E9B618AC659C002D3D61 /* DeviceMotionUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceMotionUpdate.h; path = DeviceMotionUpdate/DeviceMotionUpdate.h; sourceTree = "<group>"; };
+		FAF1E9B718AC659C002D3D61 /* DeviceMotionUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceMotionUpdate.m; path = DeviceMotionUpdate/DeviceMotionUpdate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +121,8 @@
 				FAF1E98D18AC5FC9002D3D61 /* AppDelegate.m */,
 				FAF1E98F18AC5FC9002D3D61 /* Main.storyboard */,
 				FAF1E9B218AC5FDD002D3D61 /* Podfile */,
-				FAF1E99218AC5FCA002D3D61 /* ViewController.h */,
-				FAF1E99318AC5FCA002D3D61 /* ViewController.m */,
+				FAF1E9B518AC651E002D3D61 /* DeviceMotionUpdate */,
+				FAF1E9B418AC6420002D3D61 /* ViewController */,
 				FAF1E99518AC5FCA002D3D61 /* Images.xcassets */,
 				FAF1E98418AC5FC9002D3D61 /* Supporting Files */,
 			);
@@ -153,6 +156,24 @@
 				FAF1E9A518AC5FCA002D3D61 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAF1E9B418AC6420002D3D61 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FAF1E99218AC5FCA002D3D61 /* ViewController.h */,
+				FAF1E99318AC5FCA002D3D61 /* ViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		FAF1E9B518AC651E002D3D61 /* DeviceMotionUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				FAF1E9B618AC659C002D3D61 /* DeviceMotionUpdate.h */,
+				FAF1E9B718AC659C002D3D61 /* DeviceMotionUpdate.m */,
+			);
+			name = DeviceMotionUpdate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF1E9B818AC659C002D3D61 /* DeviceMotionUpdate.m in Sources */,
 				FAF1E99418AC5FCA002D3D61 /* ViewController.m in Sources */,
 				FAF1E98E18AC5FC9002D3D61 /* AppDelegate.m in Sources */,
 				FAF1E98A18AC5FC9002D3D61 /* main.m in Sources */,
