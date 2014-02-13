@@ -103,6 +103,13 @@
 			name = Communicator;
 			sourceTree = "<group>";
 		};
+		FAA4AE0918AD6F3300A3F8A9 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 		FAF1E97118AC5FC9002D3D61 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +147,7 @@
 		FAF1E98318AC5FC9002D3D61 /* Timo */ = {
 			isa = PBXGroup;
 			children = (
+				FAA4AE0918AD6F3300A3F8A9 /* iPad */,
 				FAF1E98C18AC5FC9002D3D61 /* AppDelegate.h */,
 				FAF1E98D18AC5FC9002D3D61 /* AppDelegate.m */,
 				FAF1E98F18AC5FC9002D3D61 /* Main.storyboard */,
@@ -474,7 +482,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Timo/Timo-Prefix.pch";
 				INFOPLIST_FILE = "Timo/Timo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -488,7 +498,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Timo/Timo-Prefix.pch";
 				INFOPLIST_FILE = "Timo/Timo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
