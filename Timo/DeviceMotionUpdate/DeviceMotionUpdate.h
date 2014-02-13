@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreMotion/CoreMotion.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface DeviceMotionUpdate : NSObject
+@interface DeviceMotionUpdate : NSObject <CLLocationManagerDelegate>
+
+- (id)init;
+
+- (void)startLocationTracking;
+- (void)stopLocationTracking;
 
 @end

@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
-
+#import "DeviceMotionUpdate.h"
 
 @interface ViewController ()
+
+@property (strong, nonatomic) DeviceMotionUpdate *update;
 
 @end
 
@@ -18,6 +20,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.update = [[DeviceMotionUpdate alloc] init];
+    [self.update startLocationTracking];
 	
 }
 
