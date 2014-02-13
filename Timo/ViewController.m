@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DeviceMotionUpdate.h"
+#import "Communicator.h"
 
 @interface ViewController ()
 
@@ -23,6 +24,7 @@
     
     self.update = [[DeviceMotionUpdate alloc] init];
     [self.update startLocationTracking];
+    
 	
 }
 

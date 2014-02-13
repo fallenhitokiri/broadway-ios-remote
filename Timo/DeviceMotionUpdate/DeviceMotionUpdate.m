@@ -7,10 +7,13 @@
 //
 
 #import "DeviceMotionUpdate.h"
+#import "Communicator.h"
 
 @interface DeviceMotionUpdate()
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) Communicator *communicator;
+@property (strong, nonatomic) NSString *driverID;
 
 @end
 
@@ -25,6 +28,9 @@
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
         self.locationManager.distanceFilter = kCLDistanceFilterNone;
         self.locationManager.pausesLocationUpdatesAutomatically = NO;
+        self.communicator = [[Communicator alloc] init];
+        self.driverID = @"1";
+        [self.communicator connect];
     }
     return self;
 }
@@ -68,6 +74,7 @@
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     CLLocation *location = [locations lastObject];
     NSLog(@"x: %@",location);
+    [self.communicator update:self.driverID withLocation:location];
 }
 
 @end

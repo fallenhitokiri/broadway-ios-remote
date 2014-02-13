@@ -10,6 +10,7 @@
 		CB6D80CFF4BD4D15BB7B3D1A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F30E0DFF7F49FCB327ED8A /* libPods.a */; };
 		FA1C1D9418AC6C93001D2441 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FA1C1D9318AC6C93001D2441 /* Podfile */; };
 		FA1C1D9618AC6E6F001D2441 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1C1D9518AC6E6F001D2441 /* CoreMotion.framework */; };
+		FA1C1D9918AD2602001D2441 /* Communicator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1C1D9818AD2602001D2441 /* Communicator.m */; };
 		FAF1E97E18AC5FC9002D3D61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF1E97D18AC5FC9002D3D61 /* Foundation.framework */; };
 		FAF1E98018AC5FC9002D3D61 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF1E97F18AC5FC9002D3D61 /* CoreGraphics.framework */; };
 		FAF1E98218AC5FC9002D3D61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF1E98118AC5FC9002D3D61 /* UIKit.framework */; };
@@ -42,6 +43,8 @@
 		37FE0028469548EB856BE7E8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		FA1C1D9318AC6C93001D2441 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		FA1C1D9518AC6E6F001D2441 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		FA1C1D9718AD2602001D2441 /* Communicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Communicator.h; path = Communicator/Communicator.h; sourceTree = "<group>"; };
+		FA1C1D9818AD2602001D2441 /* Communicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Communicator.m; path = Communicator/Communicator.m; sourceTree = "<group>"; };
 		FAF1E97A18AC5FC9002D3D61 /* Timo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF1E97D18AC5FC9002D3D61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAF1E97F18AC5FC9002D3D61 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -91,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA1C1D9A18AD2608001D2441 /* Communicator */ = {
+			isa = PBXGroup;
+			children = (
+				FA1C1D9718AD2602001D2441 /* Communicator.h */,
+				FA1C1D9818AD2602001D2441 /* Communicator.m */,
+			);
+			name = Communicator;
+			sourceTree = "<group>";
+		};
 		FAF1E97118AC5FC9002D3D61 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +143,7 @@
 				FAF1E98C18AC5FC9002D3D61 /* AppDelegate.h */,
 				FAF1E98D18AC5FC9002D3D61 /* AppDelegate.m */,
 				FAF1E98F18AC5FC9002D3D61 /* Main.storyboard */,
+				FA1C1D9A18AD2608001D2441 /* Communicator */,
 				FAF1E9B518AC651E002D3D61 /* DeviceMotionUpdate */,
 				FAF1E9B418AC6420002D3D61 /* ViewController */,
 				FAF1E99518AC5FCA002D3D61 /* Images.xcassets */,
@@ -235,6 +248,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Timo;
 				TargetAttributes = {
+					FAF1E97918AC5FC9002D3D61 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					FAF1E99A18AC5FCA002D3D61 = {
 						TestTargetID = FAF1E97918AC5FC9002D3D61;
 					};
@@ -323,6 +343,7 @@
 				FAF1E99418AC5FCA002D3D61 /* ViewController.m in Sources */,
 				FAF1E98E18AC5FC9002D3D61 /* AppDelegate.m in Sources */,
 				FAF1E98A18AC5FC9002D3D61 /* main.m in Sources */,
+				FA1C1D9918AD2602001D2441 /* Communicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
