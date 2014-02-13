@@ -21,6 +21,7 @@
 		FAF1E99F18AC5FCA002D3D61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF1E98118AC5FC9002D3D61 /* UIKit.framework */; };
 		FAF1E9A718AC5FCA002D3D61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAF1E9A518AC5FCA002D3D61 /* InfoPlist.strings */; };
 		FAF1E9A918AC5FCA002D3D61 /* TimoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF1E9A818AC5FCA002D3D61 /* TimoTests.m */; };
+		FAF1E9B318AC5FDD002D3D61 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FAF1E9B218AC5FDD002D3D61 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		FAF1E9A418AC5FCA002D3D61 /* TimoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TimoTests-Info.plist"; sourceTree = "<group>"; };
 		FAF1E9A618AC5FCA002D3D61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAF1E9A818AC5FCA002D3D61 /* TimoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimoTests.m; sourceTree = "<group>"; };
+		FAF1E9B218AC5FDD002D3D61 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				FAF1E98C18AC5FC9002D3D61 /* AppDelegate.h */,
 				FAF1E98D18AC5FC9002D3D61 /* AppDelegate.m */,
 				FAF1E98F18AC5FC9002D3D61 /* Main.storyboard */,
+				FAF1E9B218AC5FDD002D3D61 /* Podfile */,
 				FAF1E99218AC5FCA002D3D61 /* ViewController.h */,
 				FAF1E99318AC5FCA002D3D61 /* ViewController.m */,
 				FAF1E99518AC5FCA002D3D61 /* Images.xcassets */,
@@ -230,6 +233,7 @@
 			files = (
 				FAF1E99618AC5FCA002D3D61 /* Images.xcassets in Resources */,
 				FAF1E98818AC5FC9002D3D61 /* InfoPlist.strings in Resources */,
+				FAF1E9B318AC5FDD002D3D61 /* Podfile in Resources */,
 				FAF1E99118AC5FC9002D3D61 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
