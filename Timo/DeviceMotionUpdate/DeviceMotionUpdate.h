@@ -17,4 +17,6 @@
 - (void)startLocationTracking;
 - (void)stopLocationTracking;
 
+- (void)startMotionCollection;
+
 @end

@@ -15,6 +15,6 @@
 - (id)init;
 
 - (void)connect;
-- (void)update:(NSString *)driverID withLocation:(CLLocation *)location;
+- (void)update:(NSString *)driverID withLocation:(CLLocation *)location andMotion:(NSString *)motion;
 
 @end

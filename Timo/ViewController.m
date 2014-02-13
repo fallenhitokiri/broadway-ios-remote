@@ -23,6 +23,7 @@
     [super viewDidLoad];
     
     self.update = [[DeviceMotionUpdate alloc] init];
+    [self.update startMotionCollection];
     [self.update startLocationTracking];
     
 	

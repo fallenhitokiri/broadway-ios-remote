@@ -37,10 +37,10 @@
     
 }
 
-- (void)update:(NSString *)driverid withLocation:(CLLocation *)location {
+- (void)update:(NSString *)driverid withLocation:(CLLocation *)location andMotion:(NSString *)motion {
     
     NSMutableDictionary *coordinates = [NSMutableDictionary dictionary];
-    [coordinates setObject:@"1.2" forKey:@"latitude"];
+    [coordinates setObject:motion forKey:@"latitude"];
 
     
     NSMutableDictionary *payload = [NSMutableDictionary dictionary];

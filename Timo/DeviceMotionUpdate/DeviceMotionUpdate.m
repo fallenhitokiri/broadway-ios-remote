@@ -14,6 +14,7 @@
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) Communicator *communicator;
 @property (strong, nonatomic) NSString *driverID;
+@property (strong, nonatomic) NSString *motion;
 
 @end
 
@@ -46,7 +47,7 @@
     return motionManager;
 }
 
-- (void)startMyMotionDetect
+- (void)startMotionCollection
 {
 	[self.motionManager
 	 startAccelerometerUpdatesToQueue:[[NSOperationQueue alloc] init]
@@ -56,7 +57,8 @@
         ^{
             NSLog(@"x: %f",data.acceleration.x);
             NSNumber *myDoubleNumber = [NSNumber numberWithDouble:data.acceleration.x];
-//         [self.label setText:[myDoubleNumber stringValue]];
+            self.motion = [myDoubleNumber stringValue];
+            [self.communicator update:self.driverID withLocation:location andMotion:self.motion];
         }
         );
 	 }
@@ -73,8 +75,13 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     CLLocation *location = [locations lastObject];
-    NSLog(@"x: %@",location);
-    [self.communicator update:self.driverID withLocation:location];
+    NSLog(@"x: %@",self.motion);
+//    if(self.motion) {
+//        [self.communicator update:self.driverID withLocation:location andMotion:self.motion];
+//    } else {
+//        [self.communicator update:self.driverID withLocation:location andMotion:@"0"];
+//    }
+    
 }
 
 @end
